@@ -1,5 +1,7 @@
 #include<iostream>
+#include"emoji.h"
 using namespace std;
+string password="welcome";
 string fname[100],lname[100],section[100],rollno[100];
 int deposit=0,arr1[100],arr2[100],arr3[100],arr4[100],arr5[100],standard[100];
 float sum[100];
@@ -716,9 +718,15 @@ void show_All_Records()
 
 int main()
 {
+	// std::cout << emojicpp::emojize("Emoji :smile: for c++ :+1:") << std::endl;
 	int operation;
 	k:
-	while(true)
+	string p;
+	cout<<"To access database you have to enter passwords first"<<endl;
+	cin>>p;
+	if (p==password)
+	{
+			while(true)
 	{
 	cout<<"\nEnter 1 to create new record";
 	cout<<"\nEnter 2 to modify existing record";
@@ -755,4 +763,12 @@ int main()
 			 break;
 	}
 	}
+		/* code */
+	}
+	else
+	{
+		cout<<"You have entered wrong passwords";
+	}
+	
+
 }
