@@ -1,5 +1,5 @@
 #include<iostream>
-#include"emoji.h"
+
 using namespace std;
 string password="welcome";
 string fname[100],lname[100],section[100],rollno[100];
